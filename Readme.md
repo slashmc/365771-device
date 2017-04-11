@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Anton Fedyanin](https://up.htmlacademy.ru/htmlcss/17/user/365771).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Немчак](https://up.htmlacademy.ru/htmlcss/17/user/69724).
 
 ---
 
