@@ -38,3 +38,139 @@ h2, h3 {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
+
+.container,
+.slider-promo,
+.сategory-goods,
+.services,
+.brands,
+.information,
+.popup,
+.breadcrumbs {
+  margin: 0 auto;
+  width: 1160px;
+  background-color: rgba(150, 250, 250, 0.5);
+  border: 1px dashed #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-top, .header-bottom {
+  margin: 10px;
+  background-color: rgba(150, 150, 250, 0.5);
+}
+
+.slider-image {
+  float: left;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.slider-content {
+  float: right;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.slider-switch {
+  width: 120px;
+  float: right;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.сategory-goods {
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.сategory-goods .сategory-item {
+  display: inline-block;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.service-nav {
+  float: left;
+  width: 280px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.service-content {
+  float: right;
+  width: 460px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+  padding-right: 340px;
+}
+
+.about {
+  float: left;
+  width: 480px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.contacts {
+  float: right;
+  width: 560px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.footer-top,
+.footer-middle,
+.footer-bottom {
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.popup-form {
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.breadcrumbs ul,
+.filter-title,
+.filter-price,
+.filter-color,
+.filter-bluetooth {
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.filters {
+  float: left;
+  width: 280px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.sorting {
+  float: right;
+  width: 780px;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.sort-option,
+.sort-result {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(150, 150, 250, 0.5);
+  margin: 10px;
+}
+
+.sort-item {
+  width: 360px;
+  margin: 10px;
+}

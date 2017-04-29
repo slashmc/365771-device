@@ -48,7 +48,7 @@
 
     <main>
 
-      <section class="slider-promo">
+      <section class="slider-promo clearfix">
 
         <article class="slide-first">
 
@@ -85,7 +85,7 @@
 
         </article>
 
-        <article class="slide-second">
+        <article class="slide-second hidden">
 
           <div class="slider-image">
             <img src="img/slider-2.png" width="345" height="485" alt="Фитнес браслет">
@@ -110,7 +110,7 @@
 
         </article>
 
-        <article class="slide-third">
+        <article class="slide-third hidden">
 
           <div class="slider-image">
             <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -150,12 +150,12 @@
 
       </section>
 
-      <section class="сategory-goods">
+      <section class="сategory-goods clearfix">
 
         <section class="сategory-item">
           <a href="#">
             <img src="img/category-1.png" width="160" height="160" alt="Очки виртуальной реальности">
-            <h3>Виртуальная реальность</h3>
+            <h3>Виртуальная<br>реальность</h3>
           </a>
         </section>
 
@@ -196,7 +196,7 @@
 
       </section>
 
-      <section class="services">
+      <section class="services clearfix">
 
         <div class="service-nav">
           <ul>
@@ -211,12 +211,12 @@
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
 
-        <div class="service-content service-warranty">
+        <div class="service-content service-warranty hidden">
           <h2>Гарантия</h2>
           <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </div>
 
-        <div class="service-content service-credit">
+        <div class="service-content service-credit hidden">
           <h2>Кредит</h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </div>
@@ -230,7 +230,7 @@
         <a href="#"><img src="img/vive.png" width="260" height="100" alt="vive"></a>
       </section>
 
-      <section class="information">
+      <section class="information clearfix">
 
         <article class="about">
 
@@ -260,25 +260,6 @@
 
         </article>
 
-      </section>
-
-      <section class="popup">
-        <form class="popup-form" action="#" method="post">
-          <button type="button">Закрыть</button>
-          <div class="field-name">
-           <h3><label for="fullname">Ваше имя:</label></h3>
-           <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" autocomplete="on">
-          </div>
-          <div class="field-mail">
-           <h3><label for="email">Ваш e-mail:</label></h3>
-           <input type="email" name="email" id="email" placeholder="Для отправки ответа" autocomplete="on">
-          </div>
-          <div class="field-text">
-           <h3><label for="letter">Текст письма:</label></h3>
-           <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
-          </div>
-          <button>Отправить</button>
-        </form>
       </section>
 
     </main>
@@ -324,6 +305,25 @@
 
       </div>
     </footer>
+
+    <section class="popup hidden">
+      <button type="button">Закрыть</button>
+      <form class="popup-form" action="#" method="post">
+        <div class="field-name">
+         <h3><label for="fullname">Ваше имя:</label></h3>
+         <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" autocomplete="on">
+        </div>
+        <div class="field-mail">
+         <h3><label for="email">Ваш e-mail:</label></h3>
+         <input type="email" name="email" id="email" placeholder="Для отправки ответа" autocomplete="on">
+        </div>
+        <div class="field-text">
+         <h3><label for="letter">Текст письма:</label></h3>
+         <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
+        </div>
+        <button>Отправить</button>
+      </form>
+    </section>
 
   </body>
 </html>
