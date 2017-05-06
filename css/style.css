@@ -1,176 +1,342 @@
 body {
+  min-width: 1200px;
+
   font-size: 15px;
   line-height: 30px;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+
   color: #464646;
-  font-weight: lighter;
-  font-family: Open Sans, sans-serif;
 }
-
-h2, h3 {
-	font-family: Gilroy, sans-serif;
-	color: #000000;
-	font-weight: bold;
-	line-height: 1.2;
+a {
+  text-decoration: none;
 }
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
 
-.slider-content h2,
-.service-content h2,
-.information h2,
-.breadcrumbs h2 {
-	font-size: 47px;
-	letter-spacing: 0.01em;
+  color: #464646;
 }
+h2 {
+  font-size: 47px;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: "Gilroy", "Arial", sans-serif;
 
-.сategory-item h3,
-.filter h3,
-.sort-item h3 {
-	font-size: 18px;
-	letter-spacing: 0.01em;
+  color: #000000;
 }
+h3 {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: "Gilroy", "Arial", sans-serif;
 
-.popup-form h3 {
-	font-size: 18px;
-	line-height: 18px;
+  color: #000000;
 }
-
-.filter-title h3, .sort-option h3 {
-	font-size: 16px;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-
-.container,
-.slider-promo,
-.сategory-goods,
-.services,
-.brands,
-.information,
-.popup,
-.breadcrumbs {
-  margin: 0 auto;
-  width: 1160px;
-  background-color: rgba(150, 250, 250, 0.5);
-  border: 1px dashed #000;
-}
-
 .hidden {
   display: none;
 }
-
-.header-top, .header-bottom {
-  margin: 10px;
-  background-color: rgba(150, 150, 250, 0.5);
+/*Разметка основных блоков*/
+.container {
+  width: 1160px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
-
-.slider-image {
-  float: left;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.slider-content {
-  float: right;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.slider-switch {
-  width: 120px;
-  float: right;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.сategory-goods {
-  text-align: center;
-  padding-bottom: 200px;
-}
-
-.сategory-goods .сategory-item {
-  display: inline-block;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.service-nav {
-  float: left;
-  width: 280px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.service-content {
-  float: right;
-  width: 460px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-  padding-right: 340px;
-}
-
-.about {
-  float: left;
-  width: 480px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.contacts {
-  float: right;
-  width: 560px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.footer-top,
-.footer-middle,
-.footer-bottom {
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.popup-form {
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.breadcrumbs ul,
-.filter-title,
-.filter-price,
-.filter-color,
-.filter-bluetooth {
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.filters {
-  float: left;
-  width: 280px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.sorting {
-  float: right;
-  width: 780px;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
-}
-
-.sort-option,
-.sort-result {
+.nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(150, 150, 250, 0.5);
-  margin: 10px;
+
+  background-color: #f7e296;
+}
+.nav .logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-search {
+  display: flex;
+  width: 50%;
+}
+.header-top ul {
+  display: flex;
+  width: 50%;
+}
+.header-top .hidden,
+.slider-promo .hidden,
+.services .hidden,
+.main-footer .hidden {
+  display: none;
+}
+.header-bottom {
+  display: flex;
+}
+.header-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgba(150, 250, 250, 0.5);
+}
+.slider-promo article {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider-number {
+  width: 100%;
+
+  background-color: #f7e296;
+}
+.slider-switch {
+  display: flex;
+}
+.slider-switch i {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+.text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 52%;
+
+  background-color: #ffffff;
+}
+.attribute-wrapper {
+  width: 100%;
+
+  background-color: rgba(250, 250, 150, 0.5);
+}
+.controls-wrapper {
+  display: flex;
+  width: 100%;
+
+  background-color: rgba(100, 150, 150, 0.5);
+}
+.controls-wrapper .btn {
+  width: 50%;
+}
+.controls-wrapper .slider-switch {
+  width: 50%;
+}
+.сategory-goods .container {
+  display: flex;
+  flex-wrap: nowrap;
+
+  background-color: rgba(250, 150, 250, 0.5);
+}
+.сategory-item {
+
+}
+.services .container {
+  display: flex;
+
+  background-color: rgba(100, 150, 150, 0.5);
+}
+.service-nav {
+}
+.service-nav li {
+}
+.service-content {
+  display: flex;
+}
+.service-content .text-wrapper {
+}
+.brands .container {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: rgba(200, 150, 150, 0.5);
+}
+.information .container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.information article {
+  width: 50%;
+  margin-right: 5px;
+
+  background-color: rgba(210, 210, 110, 0.5)
+}
+.main-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-top .logo {
+  width: 50%;
+  background-color: rgba(210, 210, 110, 0.5);
+}
+.footer-top ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.footer-middle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer-middle ul {
+  display: flex;
+
+  background-color: rgba(110, 210, 110, 0.5);
+}
+.footer-bottom {
+  display: flex;
+  flex-wrap: nowrap;
+
+  background-color: rgba(210, 210, 110, 0.5);
+}
+.breadcrumbs .container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgba(210, 210, 110, 0.5);
+}
+.breadcrumbs h2 {
+  width: 100%;
+
+  background-color: rgba(110, 210, 110, 0.5);
+}
+.breadcrumbs-items ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgba(110, 210, 110, 0.5);
+}
+.product .container {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: rgba(10, 210, 110, 0.5);
+}
+.filters {
+  max-width: 320px;
+  width: 30%;
+
+  background-color: rgba(20, 20, 110, 0.5);
+}
+.filter {
+}
+.filter div {
+  width: 100%;
+
+  background-color: rgba(110, 110, 10, 0.5);
+}
+.filter-price span,
+.filter-color span,
+.filter-bluetooth span {
+  display: block;
+
+  background-color: rgba(210, 210, 110, 0.5);
+}
+.range-price {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.range-price input {
+  max-width: 50%;
+}
+.min-price {
+  display: flex;
+  width: 40%;
+}
+.max-price {
+  display: flex;
+  width: 60%;
+}
+.filter-color {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-color span {
+  width: 100%;
+}
+.checkbox-item label {
+}
+.filter-bluetooth {
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter-bluetooth span {
+  width: 100%;
+}
+.radio-item label {
+}
+.sorting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+
+  background-color: rgba(20, 20, 20, 0.5);
+}
+.sort-option {
+  display: flex;
+  width: 100%;
+
+  background-color: rgba(30, 60, 80, 0.5);
+}
+.sort-option h3 {
+  width: auto;
+}
+.sort-category {
+  display: flex;
+  width: 50%;
+
+  background-color: rgba(130, 60, 80, 0.5);
+}
+.sort-arrows {
+  display: flex;
+  width: 40%;
+}
+.sort-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 360px;
+
+  background-color: rgba(210, 210, 110, 0.5);
+}
+.sort-item h3 {
+  width: 70%;
+}
+.sort-item span {
+  width: 30%;
+}
+.page-nav {
+  width: 100%;
+}
+.page-nav ul {
+  display: flex;
+
+  background-color: rgba(210, 210, 40, 0.5);
+}
+.page-nav span {
 }
 
-.sort-item {
-  width: 360px;
-  margin: 10px;
+
+
+.container {
+  background-color: rgba(150, 250, 250, 0.5);
 }
