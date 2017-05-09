@@ -5,6 +5,9 @@ body {
   font-weight: normal;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #464646;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -1549,5 +1552,161 @@ textarea {
   width: auto;
   letter-spacing: 3.5px;
 }
-
+.popup {
+  /*display: block;*/
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 961px;
+  padding-top: 95px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+.popup form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.close {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 883px;
+  width: 52px;
+  height: 52px;
+  font-size: 0px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #f7e296;
+}
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 12px;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.close:hover {
+  background-color: #f0c52e;
+}
+.close:active:before,
+.close:active:after {
+  background-color: #f5d76d;
+}
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 15px;
+}
+.field-name {
+  width: 37.3%;
+  padding-right: 41px;
+}
+.field-mail {
+  width: 37.3%;
+  padding-left: 0px;
+}
+.field label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+}
+.field input {
+  width: 100%;
+  min-width: 210px;
+  margin-bottom: 20px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  border: none;
+}
+.field textarea {
+  width: 722px;
+  height: 120px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  resize: none;
+  background-color: #f2f2f2;
+  border: none;
+}
+.popup-btn {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 47px;
+  margin-left: 95px;
+  margin-right: 0px;
+  margin-bottom: 24px;
+  letter-spacing: 3.8px;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+}
+.popup-btn::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: -41px;
+  margin-left: 46px;
+  width: 90.4%;
+  height: 6px;
+  background-color: #f0c52e;
+  z-index: -1;
+}
+.popup-btn:hover::before {
+  background-color: #f0c52e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+.popup-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.popup-map {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 50;
+}
+.popup-map {
+  /*display: block;*/
 }
