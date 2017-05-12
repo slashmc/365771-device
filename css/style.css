@@ -3,11 +3,11 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: #464646;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #464646;
 }
 a {
   text-decoration: none;
@@ -16,21 +16,21 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   color: #464646;
 }
 h2 {
   font-size: 47px;
   line-height: 1.2;
-  font-weight: bold;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: normal;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   color: #000000;
 }
 h3 {
   font-size: 18px;
   line-height: 1.2;
-  font-weight: bold;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: normal;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   color: #000000;
 }
 ul {
@@ -40,6 +40,30 @@ ul {
 }
 img {
   max-width: 100%;
+}
+@font-face {
+  font-family: "GilroyExtraBold";
+  src: url("../fonts/gilroyextrabold.woff") format("woff"), url("../fonts/gilroyextrabold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyLight";
+  src: url("../fonts/gilroylight.woff") format("woff"), url("../fonts/gilroylight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 button,
 input,
@@ -57,7 +81,7 @@ textarea {
   margin: 0 auto;
 }
 .main-header .container {
-  padding-top: 33px;
+  padding-top: 40px;
 }
 .nav {
   display: flex;
@@ -67,6 +91,7 @@ textarea {
   padding-right: 56px;
   padding-bottom: 32px;
   background-color: #f7e296;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .nav .logo {
   display: flex;
@@ -86,7 +111,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .nav-search {
   display: flex;
@@ -95,7 +121,6 @@ textarea {
 }
 .nav-search label {
   margin-bottom: 40px;
-  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .nav-search a {
   position: relative;
@@ -112,11 +137,11 @@ textarea {
 .nav-search input {
   position: relative;
   width: 350px;
-  margin-left: 4px;
-  color: #000000;
-  background-color: transparent;
+  margin-left: 16px;
   border: none;
   outline: none;
+  color: #000000;
+  background-color: transparent;
   /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .nav-search .btn-search {
@@ -144,7 +169,7 @@ textarea {
 }
 .nav-search .btn-search:active {
   display: block;
-  /*color: rgba(255, 255, 255, 0.3);*/
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .nav-search input:focus + .btn-search {
   display: block;
@@ -152,17 +177,19 @@ textarea {
 .header-top ul {
   display: flex;
   width: 50%;
-  margin-top: 9px;
-  margin-left: 90px;
+  margin-top: 5px;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .unidentified-user li:nth-child(2) {
-  margin-left: 242px;
+  margin-left: 195px;
 }
 .unidentified-user li:nth-child(3) {
-  margin-left: 65px;
+  margin-left: 20px;
 }
 .user-menu a {
-  position: relative;
+  /*position: relative;*/
+  display: inline-flex;
+  align-items: center;
   letter-spacing: 0.5px;
   font-size: 15px;
   line-height: auto;
@@ -175,34 +202,37 @@ textarea {
   opacity: 0.3;
 }
 .user-menu a::before {
-  position: absolute;
+  /*position: absolute;*/
   display: block;
   content: "";
-  width: 18px;
-  height: 18px;
-  top: 0px;
-  left: -27px;
+  width: 13px;
+  height: 12px;
+  margin-left: 20px;
+  padding-right: 10px;
+  /*top: 2px;*/
+  /*left: -24px;*/
   background-repeat: no-repeat;
   background-image: url("../img/user.png");
 }
 .user-menu .compare::before {
-  top: 2px;
-  left: -21px;
+  top: 5px;
+  left: -20px;
   background-image: url("../img/compare.png");
 }
 .user-menu .basket::before {
-  top: 0px;
-  left: -23px;
+  top: 3px;
+  left: -22px;
   background-image: url("../img/basket.png");
 }
 .identified-user li:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .identified-user li:nth-child(3) {
-  margin-left: 82px;
+  margin-left: 40px;
+  margin-right: 18px;
 }
 .identified-user li:nth-child(4) {
-  margin-left: 65px;
+  margin-left: 0px;
 }
 .user-menu .logout {
   opacity: 0.3;
@@ -224,12 +254,12 @@ textarea {
   /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .header-bottom a {
-  letter-spacing: 3.7px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
+  letter-spacing: 3.7px;
   color: #000000;
 }
 .header-bottom a:hover {
@@ -242,13 +272,17 @@ textarea {
   margin-bottom: 18px;
 }
 .header-bottom .menu-catalog {
-  margin-right: 314px;
+  margin-right: 310px;
 }
 .header-bottom .menu-delivery {
-  margin-right: 32px;
+  margin-right: 33px;
+  margin-left: 8px;
 }
 .header-bottom .menu-warranty {
-  margin-right: 107px;
+  margin-right: 108px;
+}
+.header-bottom .menu-contacts {
+  margin-right: 0px;
 }
 .sub-menu ul {
   display: flex;
@@ -282,7 +316,7 @@ textarea {
 .sub-menu a {
   font-size: 15px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   text-transform: capitalize;
   letter-spacing: normal;
@@ -293,7 +327,7 @@ textarea {
 .menu-catalog:after {
   position: absolute;
   content: "";
-  top: 2px;
+  top: 5px;
   right: -25px;
   width: 17px;
   height: 17px;
@@ -316,27 +350,29 @@ textarea {
 }
 .slider-number {
   width: 100%;
-  padding-top: 0;
-  margin-bottom: -38px;
+  padding-top: 0px;
+  margin-bottom: -48px;
   z-index: -1;
   background-color: #f7e296;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .slider-number span {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  vertical-align: inherit;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
-  color: #ffffff;
   margin: 0px;
+  margin-top: -11px;
   margin-right: 52px;
+  vertical-align: inherit;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 174px;
   line-height: 169px;
+  color: #ffffff;
 }
 .slider-number span::before {
   position: absolute;
-  top: 41px;
+  top: 47px;
   left: 600px;
   content: "";
   width: 100px;
@@ -349,7 +385,7 @@ textarea {
   padding: 0px;
 }
 .slider-image img {
-  margin-top: -109px;
+  margin-top: -110px;
   margin-left: 90px;
 }
 .slider-item .text-wrapper {
@@ -360,22 +396,25 @@ textarea {
   background-color: #ffffff;
 }
 .slider-content {
-  margin-bottom: 0;
+  margin-bottom: 0px;
   order: 1;
-  margin-top: -30px;
+  margin-top: -32px;
 }
 .slider-content h2 {
-  margin: 0;
+  margin: 0px;
   font-size: 47px;
+  letter-spacing: 1px;
   line-height: 56px;
   padding-left: 40px;
-  padding-right: 174px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .slider-content p {
   padding-left: 42px;
-  padding-right: 89px;
-  margin-bottom: 51px;
+  padding-right: 80px;
+  margin-bottom: 53px;
+  letter-spacing: 0.1px;
+  /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .slide-second .slider-image {
   padding: 0px;
@@ -398,20 +437,21 @@ textarea {
   padding-left: 20px;
   margin-left: 23px;
   margin-bottom: 53px;
+  /*background-color: rgba(200, 50, 150, 0.5);*/
 }
 .item-attribute {
-  margin-right: 79px;
+  margin-right: 74px;
   /*background-color: rgba(100, 50, 150, 0.5);*/
 }
 .item-attribute .item-value {
   margin-bottom: 12px;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "GilroyLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
 }
 .item-attribute .item-signature {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
@@ -424,7 +464,7 @@ textarea {
   padding: 0px;
   padding-left: 38px;
   padding-right: 15px;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   z-index: 1;
 }
 .controls-wrapper .btn {
@@ -436,8 +476,8 @@ textarea {
   letter-spacing: 3.8px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 52px;
   cursor: pointer;
@@ -479,7 +519,7 @@ textarea {
   border: 3px solid #000000;
   opacity: 0.3;
   border-radius: 50%;
-  margin-right: 23px;
+  margin-right: 22px;
 }
 .slider-switch i:hover {
   opacity: 0.4;
@@ -488,7 +528,7 @@ textarea {
   opacity: 1.0;
 }
 .slider-switch i:nth-child(1) {
-  margin-left: 77px;
+  margin-left: 80px;
 }
 .slider-switch .active {
   opacity: 1;
@@ -496,13 +536,12 @@ textarea {
 .сategory-goods .container {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  margin-bottom: 175px;
+  justify-content: space-between;
+  margin-bottom: 227px;
   /*background-color: rgba(250, 150, 250, 0.5);*/
 }
 .сategory-item {
   margin: 0px;
-  margin-right: 37px;
 }
 .сategory-item a {
   display: block;
@@ -511,18 +550,17 @@ textarea {
   height: 160px;
   background-color: #f7e296;
 }
-.сategory-item h3 {
+.сategory-item span {
   display: flex;
-  margin-top: 12px;
+  margin-top: 25px;
   margin-bottom: 12px;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-weight: normal;
-  color: #000000;
   justify-content: flex-start;
-  padding-right: 37px;
   text-align: left;
   font-size: 18px;
   line-height: 20px;
+  color: #000000;
 }
 .сategory-item:hover a {
   background-color: #f0c52e;
@@ -537,9 +575,9 @@ textarea {
 .services .container {
   display: flex;
   flex-wrap: nowrap;
-  min-height: 265px;
+  min-height: 215px;
   padding-bottom: 69px;
-  margin-bottom: 94px;
+  margin-bottom: 93px;
   /*background-color: rgba(100, 150, 150, 0.5);*/
 }
 .service-nav {
@@ -557,19 +595,19 @@ textarea {
 }
 .service-nav li {
   display: flex;
-  width: 138%;
+  width: 280px;
   margin-bottom: 27px;
   letter-spacing: 3.8px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   /*background-color: rgba(200, 150, 250, 0.5);*/
 }
 .service-nav a {
   position: relative;
-  width: 62%;
+  width: 120px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -577,6 +615,7 @@ textarea {
   padding-bottom: 10px;
   color: #000000;
   z-index: 1;
+  cursor: pointer
 }
 .service-nav a::before {
   position: absolute;
@@ -584,9 +623,23 @@ textarea {
   top: 16px;
   left: 0;
   padding-right: 0px;
-  width: 94%;
+  width: 100%;
   height: 6px;
   background-color: #f0c52e;
+  z-index: -1;
+}
+.service-nav a.active::after,
+.service-nav a:active::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0;
+  padding-right: 0px;
+  width: 100%;
+  height: 6px;
+  width: 280px;
+  height: 40px;
+  background-color: #000000;
   z-index: -1;
 }
 .service-nav a:hover {
@@ -617,7 +670,7 @@ textarea {
   display: flex;
   width: 70%;
   flex-wrap: nowrap;
-  margin-top: -27px;
+  margin-top: -31px;
   /*background-color: rgba(200, 150, 50, 0.5);*/
 }
 .service-content .text-wrapper {
@@ -630,14 +683,16 @@ textarea {
   width: 100%;
   margin: 0px;
   text-align: left;
+  letter-spacing: 1px;
   /*background-color: rgba(40, 150, 50, 0.5);*/
 }
 .service-content p {
-  padding-right: 100px;
+  padding-right: 80px;
   line-height: 30px;
-  margin-top: 0px;
+  margin-top: -3px;
   margin-bottom: 46px;
   text-align: left;
+  letter-spacing: 0.3px;
   /*background-color: rgba(140, 150, 50, 0.5);*/
 }
 .service-content img {
@@ -652,11 +707,11 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin-bottom: 63px;
+  margin-bottom: 77px;
   /*background-color: rgba(200, 150, 150, 0.5);*/
 }
 .brands-item {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 .brands-item img {
   filter: grayscale(100%);
@@ -680,47 +735,50 @@ textarea {
   width: 50%;
   align-content: flex-start;
   margin-right: 32px;
-  margin-bottom: 83px;
+  /*background-color: rgba(210, 210, 110, 0.5);*/
+}
+.information article:last-child {
+  margin-right: 0px;
   /*background-color: rgba(210, 210, 110, 0.5);*/
 }
 .information h2 {
   position: relative;
-  padding-left: 0;
-  margin-bottom: 50px;
+  padding-top: 0px;
+  padding-left: 0px;
   /*background-color: rgba(110, 210, 110, 0.5);*/
 }
 .information h2::before {
   position: absolute;
   content: "";
-  top: -53px;
+  top: -50px;
   left: 0;
   width: 80px;
   height: 6px;
   background-color: #000000;
 }
 .about p {
-  margin-top: 0;
+  margin-top: 0px;
   padding-left: 0;
-  padding-right: 80px;
-  margin-bottom: 40px;
+  padding-right: 70px;
+  margin-bottom: 30px;
   line-height: 30px;
   /*background-color: rgba(110, 110, 110, 0.5);*/
 }
 .delivery-company {
   padding-left: 34px;
-  margin-top: 15px;
-  margin-bottom: 72px;
+  padding-right: 100px;
+  margin-top: 33px;
+  margin-right: 50px;
+  margin-bottom: 68px;
   /*background-color: rgba(80, 80, 180, 0.5);*/
 }
 .delivery-company li {
   position: relative;
-  font-size: 47px;
-  line-height: 47px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
-  color: #000000;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
+  color: #000000;
 }
 .delivery-company li::before {
   position: absolute;
@@ -734,9 +792,19 @@ textarea {
   opacity: 0.3;
   border-radius: 50%;
 }
-.information .btn {
+.about .btn {
+  padding-left: 20px;
+}
+.about .btn a::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: -20px;
+  padding-right: 10px;
   width: 100%;
-  /*background-color: rgba(150, 150, 150, 0.5);*/
+  height: 7px;
+  background-color: #f0c52e;
+  z-index: -1;
 }
 .contacts {
   margin-right: 0px;
@@ -747,9 +815,24 @@ textarea {
   padding-right: 0px;
   /*background-color: rgba(110, 110, 110, 0.5);*/
 }
+.contacts .btn {
+  padding-left: 44px;
+}
+.contacts .btn a::before {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: -41px;
+  padding-left: 23px;
+  padding-right: 56px;
+  width: 100%;
+  height: 7px;
+  background-color: #f0c52e;
+  z-index: -1;
+}
 .map {
   display: block;
-  margin-bottom: 75px;
+  margin-bottom: 68px;
   /*background-color: rgba(210, 210, 120, 0.5);*/
 }
 .main-footer {
@@ -759,15 +842,16 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 40px;
 }
 .footer-top {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 64px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 }
 .footer-top .logo {
   width: 50%;
@@ -784,6 +868,9 @@ textarea {
   justify-content: flex-end;
   width: 50%;
   /*background-color: rgba(80, 60, 10, 0.5);*/
+}
+.footer-top .unidentified-user li:nth-child(2) {
+  margin-left: 14px;
 }
 .footer-top a {
   color: #ffffff;
@@ -807,11 +894,14 @@ textarea {
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
+  /*background-color: rgba(210, 210, 110, 0.5);*/
 }
 .footer-middle ul {
   display: flex;
   margin-top: 6px;
-  margin-right: 23px;
+  padding-right: 20px;
+  justify-content: space-around;
+  margin-right: 0px;
   /*background-color: rgba(110, 210, 110, 0.5);*/
 }
 .footer-middle li:nth-child(1) {
@@ -821,8 +911,8 @@ textarea {
   margin-right: 43px;
 }
 .footer-middle a {
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: auto;
   text-transform: uppercase;
@@ -896,7 +986,7 @@ textarea {
   display: block;
   width: 45px;
   height: 45px;
-  margin-right: 9px;
+  margin-right: -6px;
   background-repeat: no-repeat;
   background-position: center 3px;
   background-image: url("../img/htmlacademy-logo-y.png");
@@ -917,7 +1007,7 @@ textarea {
   width: 100%;
   margin: 0;
   margin-top: 33px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   padding-left: 59px;
   letter-spacing: 0.5px;
   font-size: 47px;
@@ -929,11 +1019,12 @@ textarea {
   padding-left: 60px;
   padding-right: 0;
 }
+.breadcrumbs-items li,
 .breadcrumbs-items a {
   opacity: 0.3;
   font-size: 14px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   color: #000000;
 }
@@ -950,7 +1041,7 @@ textarea {
 }
 .breadcrumbs-items li {
   position: relative;
-  margin-right: 27px;
+  margin-right: 43px;
   /*background-color: rgba(110, 110, 110, 0.5);*/
 }
 .breadcrumbs-items li::before {
@@ -975,13 +1066,16 @@ textarea {
   /*background-color: rgba(90, 90, 110, 0.5);*/
 }
 .product {
-  background: linear-gradient(180deg, #dcdcdc 5.2%, #eeeeee 5.2%), linear-gradient(180deg, #efefef 5.2%, #ffffff 5.2%);
+  background:
+    linear-gradient(180deg, #dcdcdc 70px, #eeeeee 70px),
+    linear-gradient(180deg, #efefef 70px, #ffffff 70px);
   background-position: 0%, 36.9%;
   background-size: 36.9% 100%, 100% 100%;
   background-repeat: no-repeat, no-repeat;
+  margin-bottom: 73px;
 }
 .filters {
-  max-width: 320px;
+  max-width: 325px;
   width: 28.5%;
   align-content: flex-start;
   margin-bottom: 0px;
@@ -1008,11 +1102,11 @@ textarea {
 .filters span {
   font-size: 47px;
   line-height: 47px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
-  color: #000000;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 18px;
+  color: #000000;
 }
 .filter {
   position: relative;
@@ -1063,9 +1157,9 @@ textarea {
   cursor: pointer;
 }
 .range-toggle:hover {
+  box-shadow: 0 3px 5px 0px;
   background-color: #7eae29;
   border-color: #ffffff;
-  box-shadow: 0 3px 5px 0px;
 }
 .min {
   left: 0px;
@@ -1086,10 +1180,10 @@ textarea {
   max-width: 50%;
   font-size: 14px;
   line-height: 22px;
-  color: rgba(0, 0, 0, 0.2);
-  background-color: #eeeeee;
   border: none;
   outline: none;
+  color: rgba(0, 0, 0, 0.2);
+  background-color: #eeeeee;
 }
 .min-price {
   display: flex;
@@ -1111,7 +1205,7 @@ textarea {
 .checkbox-item label {
   display: flex;
   align-items: center;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 40px;
@@ -1154,7 +1248,7 @@ textarea {
 .radio-item label {
   display: flex;
   align-items: center;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 40px;
@@ -1186,15 +1280,15 @@ textarea {
 }
 .show-result {
   position: relative;
+  margin-left: 0;
   padding-left: 40px;
   padding-right: 47px;
   padding-bottom: 40px;
-  margin-left: 0;
-  letter-spacing: 3.8px;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  letter-spacing: 3.8px;
   text-transform: uppercase;
   background: none;
   border: none;
@@ -1225,7 +1319,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   width: 71.5%;
-  padding-bottom: 71px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
 .sort-option {
@@ -1235,7 +1329,7 @@ textarea {
   height: 70px;
   align-items: center;
   margin: 0px;
-  padding-left: 71px;
+  padding-left: 78px;
   margin-bottom: 70px;
   background-color: #efefef;
   /*background-color: rgba(90, 20, 110, 0.5);*/
@@ -1271,7 +1365,7 @@ textarea {
   margin-right: 210px;
 }
 .sort-category a {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1295,7 +1389,7 @@ textarea {
 }
 .sort-arrows {
   display: flex;
-  width: 44%;
+  width: 60px;
   height: 30px;
   /*background-color: rgba(120, 210, 110, 0.5);*/
 }
@@ -1334,24 +1428,24 @@ textarea {
   width: 360px;
   padding-left: 0px;
   margin-right: 0px;
-  margin-bottom: 58px;
+  margin-bottom: 50px;
 }
 .sort-item a {
   width: auto;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 }
 .sort-item h3 {
-  width: 70%;
+  width: 75%;
   margin: 0px;
   letter-spacing: 0.1px;
   font-size: 18px;
   line-height: auto;
 }
 .sort-item span {
-  width: 30%;
-  margin-top: 3px;
+  width: 25%;
+  margin-top: 0px;
   text-align: right;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "GilroyLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: auto;
@@ -1376,15 +1470,15 @@ textarea {
   padding: 0px;
 }
 .item-options .buy-btn {
+  margin-bottom: 15px;
   padding-left: 47px;
   padding-right: 47px;
-  letter-spacing: 3.8px;
   font-size: 18px;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
+  letter-spacing: 3.8px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 15px;
   z-index: 0;
 }
 .item-options .buy-btn a {
@@ -1416,10 +1510,10 @@ textarea {
   margin-left: 45px;
   font-size: 13px;
   line-height: 36px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
-  color: #000000;
   opacity: 0.5;
+  color: #000000;
 }
 .item-options .compare-btn:hover {
   opacity: 1.0;
@@ -1430,7 +1524,7 @@ textarea {
 .sort-item:hover .item-options {
   display: flex;
 }
-.sort-item:nth-child(2) {
+.sort-item:nth-child(2n) {
   margin-left: 69px;
   margin-right: 40px;
 }
@@ -1438,7 +1532,7 @@ textarea {
   margin-right: 0px;
 }
 .sort-item:nth-child(3) a {
-  margin-bottom: 31px;
+  margin-bottom: 25px;
 }
 .sort-item:nth-child(3) h1 {
   width: 70%;
@@ -1451,7 +1545,7 @@ textarea {
 .sort-item:nth-child(5) {
   position: relative;
   margin-right: 0px;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 .sort-item:nth-child(5)::after {
   position: absolute;
@@ -1466,7 +1560,7 @@ textarea {
   background-size: contain;
 }
 .sort-item:nth-child(5) a {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 .page-nav {
   display: flex;
@@ -1480,14 +1574,15 @@ textarea {
   display: flex;
   justify-content: flex-start;
 }
+.page-nav li,
 .page-nav a {
   font-size: 47px;
   line-height: 47px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
-  color: #000000;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
+  color: #000000;
 }
 .page-nav li {
   margin-right: 27px;
@@ -1520,8 +1615,8 @@ textarea {
   opacity: 1;
 }
 .page-nav .page-prev:hover {
-  background-color: rgba(0, 0, 0, 0.08);
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .page-nav .page-prev:active {
   opacity: 1;
@@ -1537,8 +1632,8 @@ textarea {
   opacity: 1;
 }
 .page-nav .page-next:hover {
-  background-color: rgba(0, 0, 0, 0.08);
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .page-nav .page-next:active {
   opacity: 1;
@@ -1546,7 +1641,8 @@ textarea {
 .page-nav .page-next:active a {
   opacity: 0.3;
 }
-.page-nav span {
+.page-nav .page-prev,
+.page-nav .page-next {
   display: block;
   text-transform: uppercase;
   width: auto;
@@ -1627,8 +1723,8 @@ textarea {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
 }
 .field input {
   width: 100%;
@@ -1640,7 +1736,7 @@ textarea {
   padding-bottom: 17px;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   background-color: #f2f2f2;
   border: none;
@@ -1655,7 +1751,7 @@ textarea {
   margin-bottom: 38px;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "OpenSansLight", "Arial", sans-serif;
   font-weight: normal;
   resize: none;
   background-color: #f2f2f2;
@@ -1671,8 +1767,8 @@ textarea {
   letter-spacing: 3.8px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
   text-transform: uppercase;
   background: none;
   border: none;
