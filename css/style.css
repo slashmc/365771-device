@@ -136,6 +136,76 @@ textarea {
 .nav-search label {
   margin-bottom: 40px;
 }
+.nav-search input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+.nav-search  input::-moz-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+.nav-search  input:-moz-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+.nav-search input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.3;
+}
+.nav-search input:hover::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+.nav-search input:hover::-moz-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+.nav-search input:hover:-moz-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+.nav-search input:hover:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+.nav-search input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.nav-search input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.nav-search input:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.nav-search input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+  transition: opacity 0.3s ease;}
+.nav-search input:focus::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.nav-search input:focus::-moz-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav-search input:focus:-moz-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nav-search input:focus:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .nav-search a {
   position: relative;
   display: block;
@@ -1947,6 +2017,56 @@ textarea {
   background-color: #f2f2f2;
   border: none;
 }
+.field input:hover {
+  background-color: #eaeaea;
+}
+.field input:focus {
+  background-color: #ffffff;
+  outline-color: #f7e296;
+}
+.field input:invalid {
+  background-color: #f6dada;
+}
+.field input::-webkit-input-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field input::-moz-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field input:-moz-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field input:-ms-input-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field input:focus::-webkit-input-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field input:focus::-moz-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field input:focus:-moz-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field input:focus:-ms-input-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .field textarea {
   width: 722px;
   height: 120px;
@@ -1962,6 +2082,56 @@ textarea {
   resize: none;
   background-color: #f2f2f2;
   border: none;
+}
+.field textarea:hover {
+  background-color: #eaeaea;
+}
+.field textarea:focus {
+  background-color: #ffffff;
+  outline-color: #f7e296;
+}
+.field textarea:invalid {
+  background-color: #f6dada;
+}
+.field textarea::-webkit-input-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field textarea::-moz-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field textarea:-moz-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field textarea:-ms-input-placeholder {
+  color: #464646;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+.field textarea:focus::-webkit-input-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field textarea:focus::-moz-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field textarea:focus:-moz-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.field textarea:focus:-ms-input-placeholder {
+  color: #464646;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .popup-btn {
   position: relative;
