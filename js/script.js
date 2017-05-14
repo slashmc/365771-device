@@ -146,9 +146,9 @@ $(document).ready(function() {
 
   $(".service-nav li:nth-child(1)").click(function() {
 
-    $('li:nth-child(1) a').addClass('active');
-    $('li:nth-child(2) a').removeClass('active');
-    $('li:nth-child(3) a').removeClass('active');
+    $('li:nth-child(1) b').addClass('active');
+    $('li:nth-child(2) b').removeClass('active');
+    $('li:nth-child(3) b').removeClass('active');
 
     $(".service-delivery").css({
       "display" : "flex"
@@ -166,9 +166,9 @@ $(document).ready(function() {
 
   $(".service-nav li:nth-child(2)").click(function() {
 
-    $('li:nth-child(1) a').removeClass('active');
-    $('li:nth-child(2) a').addClass('active');
-    $('li:nth-child(3) a').removeClass('active');
+    $('li:nth-child(1) b').removeClass('active');
+    $('li:nth-child(2) b').addClass('active');
+    $('li:nth-child(3) b').removeClass('active');
 
     $(".service-delivery").css({
       "display" : "none"
@@ -186,9 +186,9 @@ $(document).ready(function() {
 
   $(".service-nav li:nth-child(3)").click(function() {
 
-    $('li:nth-child(1) a').removeClass('active');
-    $('li:nth-child(2) a').removeClass('active');
-    $('li:nth-child(3) a').addClass('active');
+    $('li:nth-child(1) b').removeClass('active');
+    $('li:nth-child(2) b').removeClass('active');
+    $('li:nth-child(3) b').addClass('active');
 
     $(".service-delivery").css({
       "display" : "none"
