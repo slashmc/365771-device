@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <nav class="nav">
 
         <div class="logo">
-          <img src="img/logo.png" width="164" height="36" alt="Логотип">
+          <a><img src="img/logo.png" width="164" height="36" alt="Логотип"></a>
         </div>
 
         <div class="header-top">
@@ -88,26 +88,26 @@
               <h2>Делай селфи,<br>
               как Бен Стиллер!</h2>
 
-              <p>Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+              <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             </section>
 
             <div class="attribute-wrapper">
 
               <div class="item-attribute">
-                <span class="item-value">8,5 м <br></span>
-                <span class="item-signature">Длина палки</span>
+                <p class="item-value">8,5 м</p>
+                <p class="item-signature">Длина палки</p>
               </div>
 
               <div class="item-attribute">
-                <span class="item-value">5 кг<br></span>
-                <span class="item-signature">Вес палки</span>
+                <p class="item-value">5 кг</p>
+                <p class="item-signature">Вес палки</p>
               </div>
 
               <div class="item-attribute">
-                <span class="item-value">Карбон<br></span>
-                <span class="item-signature">Материал</span>
+                <p class="item-value">Карбон</p>
+                <p class="item-signature">Материал</p>
               </div>
 
             </div>
@@ -119,9 +119,9 @@
               </div>
 
               <div class="slider-switch">
-                <i class="active"></i>
-                <i></i>
-                <i></i>
+                <i class="switch active"></i>
+                <i class="switch"></i>
+                <i class="switch"></i>
               </div>
 
             </div>
@@ -147,7 +147,7 @@
               <h2>Худеем<br>
               правильно!</h2>
 
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
               не пропускать занятия и соблюдать диету.</p>
 
             </section>
@@ -155,8 +155,8 @@
             <div class="attribute-wrapper">
 
               <div class="item-attribute">
-                <span class="item-value">48 часов</span><br>
-                <span class="item-signature">Без подзарядки</span>
+                <p class="item-value">48 часов</p>
+                <p class="item-signature">Без подзарядки</p>
               </div>
 
             </div>
@@ -168,9 +168,9 @@
               </div>
 
               <div class="slider-switch">
-                <i></i>
-                <i class="active"></i>
-                <i></i>
+                <i class="switch"></i>
+                <i class="switch active"></i>
+                <i class="switch"></i>
               </div>
 
             </div>
@@ -196,7 +196,7 @@
               <h2>Порхает как бабочка,<br>
               жалит как пчела!</h2>
 
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
               мощным лазером, замаскированным под стандартную камеру.</p>
 
             </section>
@@ -204,13 +204,13 @@
             <div class="attribute-wrapper">
 
               <div class="item-attribute">
-                <span class="item-value">800 м</span><br>
-                <span class="item-signature">Дальность полета</span>
+                <p class="item-value">800 м</p>
+                <p class="item-signature">Дальность полета</p>
               </div>
 
               <div class="item-attribute">
-                <span class="item-value">50 м</span><br>
-                <span class="item-signature">Радиус поражения</span>
+                <p class="item-value">50 м</p>
+                <p class="item-signature">Радиус поражения</p>
               </div>
 
             </div>
@@ -222,9 +222,9 @@
               </div>
 
               <div class="slider-switch">
-                <i></i>
-                <i></i>
-                <i class="active"></i>
+                <i class="switch"></i>
+                <i class="switch"></i>
+                <i class="switch active"></i>
               </div>
 
             </div>
@@ -365,7 +365,7 @@
             <li>ЖелДорЭкспидиция</li>
           </ul>
 
-          <div class="btn">
+          <div class="btn btn-about">
             <a href="#">Подробнее о нас</a>
           </div>
 
@@ -378,15 +378,17 @@
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 
           <div class="map">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947369!2d37.52742931605529!3d55.68703400452977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1476957410118" width="560" height="222" frameborder="0" style="border:0" allowfullscreen></iframe> -->
             <img src="img/map.jpg" width="560" height="222" alt="Карта">
           </div>
 
-          <div class="popup-map hidden">
+          <div class="popup-map visually-hidden">
             <button class="close" type="button">Закрыть</button>
-            <img src="img/map-big.jpg" width="960" height="559" alt="Подробная арта">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947369!2d37.52742931605529!3d55.68703400452977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1476957410118" width="960" height="559" style="border:0" allowfullscreen></iframe>
+            <!-- <img src="img/map-big.jpg" width="960" height="559" alt="Подробная арта"> -->
           </div>
 
-          <div class="btn">
+          <div class="btn btn-feedback">
             <a href="#">Напишите нам</a>
           </div>
 
@@ -394,9 +396,12 @@
 
       </div>
 
-      <section class="popup hidden">
+      <section class="popup visually-hidden">
+
+        <button class="close" type="button">Закрыть</button>
+
         <form class="popup-form" action="#" method="post">
-          <button class="close" type="button">Закрыть</button>
+          <!-- <button class="close" type="button">Закрыть</button> -->
           <div class="field field-name">
             <label for="fullname">Ваше имя:</label>
             <input type="text" name="fullname" id="fullname" placeholder="Представьтесь, пожалуйста" autocomplete="on">
@@ -409,7 +414,7 @@
             <label for="letter">Текст письма:</label>
             <textarea name="letter" id="letter" cols="40" rows="10" placeholder="В свободной форме"></textarea>
           </div>
-          <button class="popup-btn">Отправить</button>
+          <button class="popup-btn" type="submit">Отправить</button>
         </form>
       </section>
 
@@ -424,7 +429,7 @@
       <div class="footer-top">
 
         <div class="logo">
-          <img src="img/logo-yellow.png" width="163" height="36" alt="Логотип">
+          <a><img src="img/logo-yellow.png" width="163" height="36" alt="Логотип"></a>
         </div>
 
         <ul class="user-menu unidentified-user">
@@ -476,6 +481,9 @@
     </div>
 
   </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>
