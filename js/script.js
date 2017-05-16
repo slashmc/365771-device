@@ -1,4 +1,4 @@
-// Карта попап
+// Карта и  попап (без jquery)
 
 var map = document.querySelector(".map");
 var popupMap = document.querySelector(".popup-map");
@@ -35,7 +35,7 @@ window.addEventListener("keydown", function(event) {
 
 popupBtn.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.remove("visually-hidden");
+  popup.classList.add("popap-show");
 
   // if (storageUserName) {
   //   userName.value = storageUserName;
@@ -50,13 +50,13 @@ popupBtn.addEventListener("click", function(event) {
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.add("visually-hidden");
+  popup.classList.remove("popap-show");
 });
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
     if (!popup.classList.contains("visually-hidden")) {
-      popup.classList.add("visually-hidden");
+      popup.classList.remove("popap-show");
     }
   }
 });
