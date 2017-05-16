@@ -265,6 +265,8 @@ textarea {
   color: #000000;
 }
 .user-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -310,7 +312,9 @@ textarea {
 .user-menu .login {
   width: auto;
   margin-left: 46px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .user-menu .logout {
   margin-right: 53px;
@@ -318,13 +322,17 @@ textarea {
 .user-menu .compare {
   width: 100px;
   padding-right: 5px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .user-menu .basket {
   width: 100px;
   padding-right: 5px;
   margin-left: 20px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .user-menu .logout {
   opacity: 0.3;
@@ -393,7 +401,9 @@ textarea {
   margin-left: 27px;
 }
 .header-bottom .menu-contacts {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 104px;
 }
 .sub-menu ul {
@@ -1110,7 +1120,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1129,10 +1141,14 @@ textarea {
   padding: 0;
   margin: 0 auto;
   list-style: none;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 4px;
   padding-right: 39px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer-middle li:nth-child(1) {
   margin-right: 35px;
@@ -1632,8 +1648,12 @@ textarea {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: auto;
-  flex-grow: 1;
-  justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1665,7 +1685,9 @@ textarea {
   display: flex;
   width: auto;
   height: 30px;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .sort-category li {
   width: 60px;
@@ -1748,7 +1770,9 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 760px;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1915,8 +1939,12 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
