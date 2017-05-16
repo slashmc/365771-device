@@ -4,6 +4,17 @@ var map = document.querySelector(".map");
 var popupMap = document.querySelector(".popup-map");
 var closeMap = popupMap.querySelector(".close");
 
+var popupBtn = document.querySelector(".btn-feedback");
+var popup = document.querySelector(".popup");
+var close = popup.querySelector(".close");
+
+var form = popup.querySelector("form");
+var userName = popup.querySelector("[name=fullname]");
+var userEmail = popup.querySelector("[name=email]");
+var userLetter = popup.querySelector("[name=letter]");
+// var storageUserName = localStorage.getItem("userName");
+// var storageUserEmail = localStorage.getItem("userEmail");
+
 map.addEventListener("click", function(event) {
   event.preventDefault();
   popupMap.classList.remove("visually-hidden");
@@ -22,23 +33,19 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-var popupBtn = document.querySelector(".btn-feedback");
-var popup = document.querySelector(".popup");
-var close = popup.querySelector(".close");
-
 popupBtn.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("visually-hidden");
 
-  if (storageUserName) {
-    userName.value = storageUserName;
-    userEmail.focus();
-  } else if (storageUserEmail) {
-    userEmail.value = storageUserEmail;
-    userLetter.focus();
-  } else {
-    userName.focus();
-  }
+  // if (storageUserName) {
+  //   userName.value = storageUserName;
+  //   userEmail.focus();
+  // } else if (storageUserEmail) {
+  //   userEmail.value = storageUserEmail;
+  //   userLetter.focus();
+  // } else {
+  //   userName.focus();
+  // }
 });
 
 close.addEventListener("click", function(event) {
@@ -53,14 +60,6 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
-
-var form = popup.querySelector("form");
-var userName = popup.querySelector("[name=fullname]");
-var userEmail = popup.querySelector("[name=email]");
-var userLetter = popup.querySelector("[name=letter]");
-
-var storageUserName = localStorage.getItem("userName");
-var storageUserEmail = localStorage.getItem("userEmail");
 
 form.addEventListener("submit", function(event) {
   if (!userName.value || !userEmail.value) {

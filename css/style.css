@@ -4,6 +4,7 @@ body {
   line-height: 30px;
   font-weight: normal;
   font-family: "OpenSansLight", "Arial", sans-serif;
+  letter-spacing: normal;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -88,7 +89,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: -34px;
-  margin-left: 0;
+  margin-left: 2px;
   margin-bottom: 14px;
 }
 .nav a:hover {
@@ -254,11 +255,11 @@ textarea {
   list-style: none;
   margin-top: 5px;
 }
-.unidentified-user li:nth-child(2) {
-  margin-left: 195px;
+.header-unidentified-user li:nth-child(2) {
+  padding-left: 214px;
 }
-.unidentified-user li:nth-child(3) {
-  margin-left: 20px;
+.header-unidentified-user li:nth-child(3) {
+  margin-left: 40px;
 }
 .user-menu a {
   display: -webkit-inline-box;
@@ -267,11 +268,16 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  letter-spacing: 0.5px;
+  letter-spacing: normal;
   font-size: 15px;
   line-height: auto;
   text-decoration: none;
   color: #000000;
+  position: relative;
+  padding-left: 25px;
+}
+.header-unidentified-user li:first-child {
+  margin-left: 20px;
 }
 .user-menu a:hover {
   opacity: 0.6;
@@ -279,35 +285,50 @@ textarea {
 .user-menu a:active {
   opacity: 0.3;
 }
-.user-menu a::before {
+.user-menu .login::before {
   display: block;
   content: "";
   width: 13px;
   height: 12px;
-  margin-left: 20px;
-  padding-right: 10px;
   background-repeat: no-repeat;
   background-image: url("../img/user.png");
+  position: absolute;
+  top: 8px;
+  left: 0px;
 }
 .user-menu .compare::before {
-  top: 5px;
-  left: -20px;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 9px;
+  left: 5px;
   background-image: url("../img/compare.png");
 }
 .user-menu .basket::before {
-  top: 3px;
-  left: -22px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 8px;
+  left: 0px;
   background-image: url("../img/basket.png");
 }
-.identified-user li:nth-child(2) {
+.header-identified-user li:first-child {
+  margin-left: 20px;
+}
+.header-identified-user li:nth-child(2) {
   margin-left: 15px;
 }
-.identified-user li:nth-child(3) {
-  margin-left: 40px;
-  margin-right: 18px;
+.header-identified-user li:nth-child(3) {
+  margin-left: 43px;
 }
-.identified-user li:nth-child(4) {
-  margin-left: 0px;
+.header-identified-user li:nth-child(4) {
+  margin-left: 40px;
 }
 .user-menu .logout {
   opacity: 0.3;
@@ -325,6 +346,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-flow: row wrap;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -332,7 +354,19 @@ textarea {
   margin-left: 3px;
   position: relative;
 }
-.header-bottom a {
+.menu-catalog a {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "GilroyExtraBold", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  text-decoration: none;
+  color: #000000;
+}
+.menu-delivery a,
+.menu-warranty a,
+.menu-contacts a {
   font-size: 18px;
   line-height: 18px;
   font-family: "GilroyExtraBold", "Arial", sans-serif;
@@ -351,50 +385,68 @@ textarea {
 .header-bottom li {
   margin-bottom: 18px;
 }
+.header-bottom .ml-auto {
+  margin-left: auto;
+}
 .header-bottom .menu-catalog {
-  margin-right: 294px;
+  width: 220px;
+  /*justify-content: flex-start;*/
+  /*flex-basis: 300px;*/
+  /*margin-right: 291px;*/
+}
+.header-bottom .menu-delivery,
+.header-bottom .menu-warranty,
+.header-bottom .menu-contacts {
+  /*margin-right: 0px;*/
 }
 .header-bottom .menu-delivery {
-  margin-right: 33px;
-  margin-left: 23px;
+  /*width: 130px;*/
+  /*margin-right: 34px;*/
 }
 .header-bottom .menu-warranty {
-  margin-right: 108px;
+  /*width: 120px;*/
+  margin-left: 33px;
 }
 .header-bottom .menu-contacts {
-  margin-right: -5px;
+  /*width: 124px;*/
+  margin-left: 108px;
 }
 .sub-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*flex-direction: column;*/
+  height: 110px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: absolute;
-  width: 100%;
+  /*width: 100%;*/
+  width: 600px;
   top: 25px;
   left: -59px;
   margin: 0;
   list-style: none;
   padding-left: 56px;
-  padding-right: 57px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-right: 504px;
+  /*padding-top: 60px;*/
+  padding-top: 25px;
+  padding-bottom: 30px;
   background-color: #f7e296;
   z-index: 1;
 }
 .sub-menu li {
   margin: 0px;
-  margin-right: 50px;
+  width: 200px;
+  /*margin-right: 50px;*/
 }
 .sub-menu li:nth-child(3) {
-  margin-right: 500px;
+  /*margin-right: 500px;*/
 }
 .sub-menu li:nth-child(4) {
-  margin-right: 73px;
+  /*margin-right: 73px;*/
 }
-.sub-menu li:nth-child(5) {
-  margin-right: 700px;
+.sub-menu li:nth-child(6) {
+  margin-right: 500px;
 }
 .sub-menu a {
   font-size: 15px;
@@ -404,15 +456,17 @@ textarea {
   text-transform: capitalize;
   letter-spacing: normal;
   text-decoration: none;
+  color: #000000;
 }
 .menu-catalog {
   position: relative;
+  padding-right: 30px;
 }
 .menu-catalog:after {
   position: absolute;
   content: "";
-  top: 5px;
-  right: -25px;
+  top: 7px;
+  right: 2px;
   width: 17px;
   height: 17px;
   background-image: url("../img/plus.png");
@@ -505,7 +559,7 @@ textarea {
 .slider-content h2 {
   margin: 0px;
   font-size: 47px;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   line-height: 56px;
   padding-left: 40px;
   margin-bottom: 18px;
@@ -517,14 +571,14 @@ textarea {
 }
 .slider-content p {
   padding-left: 42px;
-  padding-right: 80px;
+  padding-right: 70px;
   margin: 0;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
   font-family: "OpenSansLight", "Arial", sans-serif;
   color: #464646;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
 }
 .slide-second .slider-image {
   padding: 0px;
@@ -555,7 +609,7 @@ textarea {
 }
 .item-attribute .item-value {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   font-family: "GilroyLight", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
@@ -589,14 +643,14 @@ textarea {
   width: 25%;
 }
 .btn {
-  padding-left: 86px;
+  padding-left: 85px;
   letter-spacing: 3.8px;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 23px;
   font-family: "GilroyExtraBold", "Arial", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
-  margin-bottom: 52px;
+  margin-bottom: 46px;
   cursor: pointer;
 }
 .btn a {
@@ -713,12 +767,13 @@ textarea {
 }
 .service-nav ul {
   display: block;
-  width: 79%;
+  /*width: 79%;*/
+  width: 276px;
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 82px;
-  padding-bottom: 43px;
+  padding-top: 83px;
+  padding-bottom: 44px;
   border-right: 8px solid #000000;
 }
 .service-nav li {
@@ -726,9 +781,9 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   width: 280px;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   vertical-align: middle;
-  letter-spacing: 3.8px;
+  letter-spacing: 3.5px;
   font-size: 18px;
   line-height: 18px;
   line-height: 40px;
@@ -843,7 +898,7 @@ textarea {
 .service-content img {
   max-width: 100%;
   margin: 0px;
-  margin-top: 12px;
+  margin-top: 16px;
   margin-left: 31px;
   width: 136px;
   height: 164px;
@@ -874,7 +929,7 @@ textarea {
   opacity: 1;
 }
 .information {
-  margin-bottom: 11px;
+  /*margin-bottom: 11px;*/
 }
 .information .container {
   display: -webkit-box;
@@ -892,7 +947,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 48%;
+  width: 560px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
@@ -902,49 +957,46 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 49%;
+  width: 560px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
 .information h2 {
   position: relative;
-  padding-top: 0px;
-  padding-left: 0px;
+  /*padding-top: 0px;*/
+  /*padding-left: 0px;*/
   font-size: 47px;
   line-height: 1.2;
   font-weight: normal;
   font-family: "GilroyExtraBold", "Arial", sans-serif;
   color: #000000;
+  width: 560px;
 }
 .information h2::before {
   position: absolute;
   content: "";
-  top: -50px;
+  top: -48px;
   left: 0;
   width: 80px;
   height: 6px;
   background-color: #000000;
 }
 .about p {
-  display: inline-table;
-  margin-top: 0px;
-  padding-left: 0;
-  padding-right: 80px;
+  /*display: inline-block;*/
+  width: 478px;
+  margin: 0px;
   margin-bottom: 30px;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: normal;
-  font-family: "OpenSansLight", "Arial", sans-serif;
-  color: #464646;
-  line-height: 30px;
+  /*letter-spacing: -0.1px;*/
+  /*width: 560px;*/
 }
 .delivery-company {
   list-style: none;
-  padding-left: 34px;
-  padding-right: 100px;
-  margin-top: 33px;
-  margin-right: 50px;
-  margin-bottom: 68px;
+  padding-left: 35px;
+  /*padding-right: 100px;*/
+  margin-top: 35px;
+  /*margin-right: 50px;*/
+  margin-bottom: 62px;
+  width: 560px;
 }
 .delivery-company li {
   position: relative;
@@ -967,35 +1019,41 @@ textarea {
   border-radius: 50%;
 }
 .about .btn {
-  padding-left: 20px;
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 21px;
 }
 .about .btn a::before {
   position: absolute;
   content: "";
   top: 8px;
   left: -20px;
-  padding-right: 10px;
+  padding-right: 13px;
   width: 100%;
   height: 7px;
   background-color: #f0c52e;
   z-index: -1;
 }
 .contacts {
-  margin-right: 0px;
+  /*margin-right: 0px;*/
 }
 .contacts p {
-  display: inline-table;
+  /*display: inline-table;*/
+  width: 560px;
   margin-top: 0;
   margin-bottom: 40px;
-  padding-right: 0px;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: normal;
-  font-family: "OpenSansLight", "Arial", sans-serif;
-  color: #464646;
+  /*padding-right: 0px;*/
+  /*font-size: 15px;*/
+  /*line-height: 30px;*/
+  /*font-weight: normal;*/
+  /*font-family: "OpenSansLight", "Arial", sans-serif;*/
+  /*color: #464646;*/
 }
 .contacts .btn {
-  padding-left: 44px;
+  margin: 0;
+  /*padding-top: 2px;*/
+  /*padding-left: 21px;*/
+  padding-left: 39px;
 }
 .contacts .btn a::before {
   position: absolute;
@@ -1025,7 +1083,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 .footer-top {
   display: -webkit-box;
@@ -1035,10 +1093,14 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 64px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 20px;
+  /*padding-top: 64px;*/
+  /*padding-left: 0px;*/
+  /*padding-right: 0px;*/
+  /*padding-bottom: 20px;*/
+  margin-top: 64px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
 }
 .footer-top .logo {
   width: 50%;
@@ -1061,14 +1123,14 @@ textarea {
   margin: 0;
   list-style: none;
 }
-.footer-top .unidentified-user li:nth-child(2) {
-  margin-left: 14px;
+.footer-unidentified-user li {
+  margin-left: 40px;
 }
 .footer-top a {
   text-decoration: none;
   color: #ffffff;
 }
-.footer-top a::before {
+.footer-top .login::before {
   background-image: url("../img/user-y.png");
 }
 .footer-top .compare::before {
@@ -1082,6 +1144,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1089,26 +1152,28 @@ textarea {
 }
 .footer-middle span {
   font-size: 15px;
-  line-height: 30px;
+  line-height: 33px;
   color: #ffffff;
 }
 .footer-middle ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 440px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
-  margin-top: 6px;
-  padding-right: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 4px;
+  padding-right: 39px;
+  /*-ms-flex-pack: distribute;*/
+      justify-content: center;
 }
 .footer-middle li:nth-child(1) {
   margin-right: 35px;
 }
 .footer-middle li:nth-child(2) {
-  margin-right: 43px;
+  margin-right: 31px;
 }
 .footer-middle a {
   font-family: "GilroyExtraBold", "Arial", sans-serif;
@@ -1151,7 +1216,7 @@ textarea {
   position: absolute;
   display: block;
   content: "";
-  top: 20px;
+  top: 18px;
   left: 0;
   width: 79px;
   height: 7px;
@@ -1193,7 +1258,7 @@ textarea {
   display: block;
   width: 45px;
   height: 45px;
-  margin-right: -6px;
+  margin-right: -9px;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center 3px;

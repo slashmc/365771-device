@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <title>Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -29,13 +31,13 @@
             <button class="btn-search">Найти</button>
           </form>
 
-          <ul class="user-menu unidentified-user">
+          <ul class="user-menu header-unidentified-user">
             <li><a class="login" href="#">Войти</a></li>
             <li><a class="compare" href="#">Сравнить</a></li>
             <li><a class="basket" href="#">Корзина</a></li>
           </ul>
 
-          <ul class="user-menu identified-user hidden">
+          <ul class="user-menu header-identified-user hidden">
             <li><a class="login" href="#">Валентин Петухов</a></li>
             <li><a class="logout" href="#">Выйти</a></li>
             <li><a class="compare" href="#">Сравнить</a></li>
@@ -56,7 +58,7 @@
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-          <li class="menu-delivery"><a href="#">Доставка</a></li>
+          <li class="menu-delivery ml-auto"><a href="#">Доставка</a></li>
           <li class="menu-warranty"><a href="#">Гарантия</a></li>
           <li class="menu-contacts"><a href="#">Контакты</a></li>
         </ul>
@@ -88,8 +90,8 @@
               <h2>Делай селфи,<br>
               как Бен Стиллер!</h2>
 
-              <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
-              <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             </section>
 
@@ -368,7 +370,7 @@
           <ul class="delivery-company">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспидиция</li>
+            <li>ЖелДорЭкспедиция</li>
           </ul>
 
           <div class="btn btn-about">
@@ -437,13 +439,13 @@
           <a><img src="img/logo-yellow.png" width="163" height="36" alt="Логотип"></a>
         </div>
 
-        <ul class="user-menu unidentified-user">
+        <ul class="user-menu footer-unidentified-user">
           <li><a class="login" href="#">Войти</a></li>
           <li><a class="compare" href="#">Сравнить</a></li>
           <li><a class="basket" href="#">Корзина</a></li>
         </ul>
 
-        <ul class="user-menu identified-user hidden">
+        <ul class="user-menu footer-identified-user hidden">
           <li><a class="login" href="#">Валентин Петухов</a></li>
           <li><a class="logout" href="#">Выйти</a></li>
           <li><a class="compare" href="#">Сравнить</a></li>
@@ -488,8 +490,15 @@
   </footer>
 
   <script src="js/jquery.js"></script>
-  <script src="js/script.min.js"></script>
-  <!-- <script src="js/script.js"></script> -->
+  <!-- <script src="js/script.min.js"></script> -->
+  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $.pixlayout({clip: true, src: "device-index.jpg", show:true, center:true, top:0, left:0, pervious: false});
+  });
+  </script>
 
 </body>
 </html>
