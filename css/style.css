@@ -1063,7 +1063,6 @@ textarea {
   padding-top: 64px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 25px;
 }
 .footer-top .logo {
   width: auto;
@@ -1126,7 +1125,8 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 56px;
+  /*margin-bottom: 56px;*/
+  margin-top: -33px;
 }
 .footer-middle span {
   font-size: 15px;
@@ -1183,6 +1183,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-bottom: auto;
 }
 .footer-social {
   display: -webkit-box;
@@ -1190,7 +1191,7 @@ textarea {
   display: flex;
   width: auto;
   margin-left: 43.4%;
-  margin-bottom: 64px;
+  /*margin-bottom: 64px;*/
 }
 .footer-social::before {
   position: absolute;
@@ -1232,7 +1233,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   width: auto;
-  margin-bottom: 64px;
+  /*margin-bottom: 64px;*/
 }
 .copyright a {
   display: block;
