@@ -1183,7 +1183,6 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding-bottom: 50px;
 }
 .footer-social {
   display: -webkit-box;
